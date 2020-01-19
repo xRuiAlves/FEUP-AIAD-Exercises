@@ -1,0 +1,17 @@
+Option with best social value:
+z(v1) = {x}
+z(v2) = {y}
+z(v3) = {}
+total social value = 7 + 4 = 11
+
+Let W1 = Best social value without v1 existing: 9
+Let W2 = Best social value without v2 existing: 10
+Let W3 = Best social value without v3 existing: 7 + 4 = 11
+
+Let K1 = Social value w/o v1 contribution: 11 - 7 = 4
+Let K2 = Social value w/o v2 contribution: 11 - 4 = 7
+Let K3 = Social value w/o v3 contribution: 11 - 0 = 11
+
+Price paid by v1 = W1 - K1 = 9 - 4 = 5
+Price paid by v2 = W2 - K2 = 10 - 7 = 3
+Price paid by v3 = W3 - K3 = 11 - 11 = 0 
