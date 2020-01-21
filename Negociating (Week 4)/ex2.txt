@@ -1,0 +1,68 @@
+//////////////
+// Alínea A //
+//////////////
+
+C(e1)(conflict_deal) = 1+1+3+3 = 8
+C(e2)(conflict_deal) = 3+3+1+3 = 10
+
+C(e1)(delta1) = 1 + 3 = 4
+C(e2)(delta1) = 3 + 3 = 6
+
+C(e1)(delta2) = 3 + 3 = 6
+C(e2)(delta2) = 1 + 3 = 4
+
+C(e1)(delta3) = 1 + 3 + 4 = 8
+C(e2)(delta3) = 3
+
+C(e1)(delta4) = 3
+C(e2)(delta4) = 1 + 3 + 4 = 8
+
+U(e1)(delta1) = 8 - 4 = 4
+U(e2)(delta1) = 10 - 6 = 4
+
+U(e1)(delta2) = 8 - 6 = 2
+U(e2)(delta2) = 10 - 4 = 6
+
+U(e1)(delta3) = 8 - 8 = 0
+U(e2)(delta3) = 10 - 3 = 7
+
+U(e1)(delta4) = 8 - 3 = 5
+U(e2)(delta4) = 10 - 8 = 2
+
+Todos são racionais, porque são não piores do que o conflict deal!
+U(e1)(delta1) >= 0 && U(e2)(delta1) >= 0 && 
+U(e1)(delta2) >= 0 && U(e2)(delta2) >= 0 && 
+U(e1)(delta3) >= 0 && U(e2)(delta3) >= 0 && 
+U(e1)(delta4) >= 0 && U(e2)(delta4) >= 0
+
+Todos são Pareto-Optimal porque não há nenhum acordo que seja melhor para um dos agentes sem ser pior para o outro!
+E.g: Se delta1:
+	- trocar para delta2: melhora e2 MAS piora e1;
+	- trocar para delta3: melhora e1 MAS piora e2;
+	- trocar para delta4: melhora e2 MAS piora e1;
+
+//////////////
+// Alínea B //
+//////////////
+
+Ambos iriam propor a alternativa com maior utilidade para o próprio:
+
+Para e1: delta4 (utilidade de 5)
+Para e2: delta3 (utilidade de 7)
+
+//////////////
+// Alínea C //
+//////////////
+
+risco(e1) = (U(e1)(delta4) - U(e1)(delta3))/U(e1)(delta4) =
+          = (5 - 0) / 5 = 1
+risco(e2) = (U(e2)(delta3) - U(e2)(delta4))/U(e2)(delta3) = 
+          = (7 - 2) / 7 = 0.714
+
+Neste caso, e2 iria conceder (pois conceder apresenta menos risco para e2 do que para e1)
+
+//////////////
+// Alínea D //
+//////////////
+
+e2 deverá propor a proposta com mais utilidade para si, à exceção de delta3 (que foi agora descartada). Deveria, portanto, propor delta2 (com utilidade de 6 para e2).
